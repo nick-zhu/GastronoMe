@@ -1,0 +1,47 @@
+{
+  "name": "gastronome",
+  "version": "1.0.0",
+  "description": "An app tells you what dishes you could make with the ingredients you currently have",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "server": "webpack && babel-node server.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "keywords": [],
+  "author": "widget-dev <hanzhang1990@gmail.com> (https://github.com/nick-zhu)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.9",
+    "nodemon": "^1.15.0",
+    "react-hot-loader": "^3.1.3",
+    "style-loader": "^0.20.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1",
+    "webpack-validator": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0"
+  }
+}
