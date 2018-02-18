@@ -4,9 +4,9 @@
   "description": "An app tells you what dishes you could make with the ingredients you currently have",
   "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "dev": "webpack-dev-server",
     "build": "webpack",
-    "server": "webpack && babel-node server.js"
+    "server": "babel-node server.js"
   },
   "babel": {
     "presets": [
@@ -41,6 +41,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0"
   }

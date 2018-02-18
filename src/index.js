@@ -1,64 +1,14 @@
-import 'babel-polyfill'; // for redux-saga
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {
-  Router,
-  Route,
-  hashHistory
-} from 'react-router';
+import React from 'react'
+import { render } from 'react-dom'
 
-import {
-  createStore,
-  applyMiddleware,
-  compose
-} from 'redux';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
-// import reducer from './reducer';
-import { Provider } from 'react-redux';
-import createSagaMiddleware from 'redux-saga'
-// import rootSaga from './sagas'
-// // our components
-// import Layout from './components/layout';
-// import { HomeContainer } from './components/home';
-// import { DetailContainer } from './components/detail';
-// import { AddContainer } from './components/add';
-// app css
-// import '../dist/css/style.css';
+import App from './components/app';
 
-// Filestack API requires to set a key
-// filepicker.setKey("YOUR_API_KEY");
-
-// const sagaMiddleware = createSagaMiddleware();
-// const store = createStore(
-//   reducer,
-//   compose(
-//     applyMiddleware(sagaMiddleware),
-//     window.devToolsExtension ? window.devToolsExtension() : f => f // connect to redux devtools
-//   )
-// );
-// sagaMiddleware.run(rootSaga);
-
-const HomeContainer = <div>hello world</div>;
-// the 3 paths of the app
-// const routes = <Route component={Layout}>
-//   <Route path="/" component={HomeContainer} />
-//   {/* <Route path="/detail/:id" component={DetailContainer} /> */}
-//   {/* <Route path="/add" component={AddContainer} /> */}
-// </Route>;
-
-const element = (
-  <h1>
-    Hello, nick!
-  </h1>
-);
-
-// add provider as first component and connect the store to it
-ReactDOM.render(
-  // <Provider store={store}>
-  //   <Router history={hashHistory}>
-  //     <Route path="/" component={HomeContainer} />
-  //   </Router>
-  // </Provider>,
-  element,
+render(
+  <Provider>
+    <App />
+  </Provider>,
   document.getElementById('app')
-);
+)
