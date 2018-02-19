@@ -18,10 +18,3 @@ export const recipesFetchSuccess = recipes => {
     recipes
   }
 }
-
-export const updateQuery = query => {
-  return {
-    type: 'UPDATE_QUERY',
-    query
-  }
-}

@@ -8,8 +8,7 @@ export default class Home extends React.Component {
   queryRecipes() {
     let fruits = ['apple', 'pear', 'peach', 'pineapple', 'stawberry', 'blueberry', 'banana'];
     let tmpFruits = fruits.slice(0, Math.random() * 6);
-    this.props.updateQuery(tmpFruits);
-    this.props.getRecipes();
+    this.props.getRecipes(tmpFruits);
   }
 
   render() {
@@ -24,7 +23,6 @@ export default class Home extends React.Component {
         <div></div>
       }
       </div>
-      
     )
   }
 }

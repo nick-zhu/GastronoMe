@@ -5,17 +5,14 @@ const fetchRecipesFromServer = queryObj => {
   let formData = {
     'ingredients': queryObj
   }
-
+  
   let formDataEncodedStr = encodeURIComponent(JSON.stringify(formData));
 
-  return fetch(`http://localhost:8080/recipes?form_data=${formDataEncodedStr}`)
-    .then(res => res.json());
+  return fetch(`http://localhost:8080/recipes?form_data=${formDataEncodedStr}`).then(res => res.json());
 };
 
-function* fetchRecipes() {
-  let state = yield select();
-  let queryObj = state.recipeQuery;
-
+function* fetchRecipes(action) {
+  let queryObj = action.query;
   let recipes = yield fetchRecipesFromServer(queryObj);
   yield put(recipesFetchSuccess(recipes));
 }
