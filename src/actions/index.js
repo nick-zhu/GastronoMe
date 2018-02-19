@@ -13,9 +13,15 @@ export const getRecipes = query => {
 }
 
 export const recipesFetchSuccess = recipes => {
-  console.log(recipes)
   return {
     type: 'FETCH_SUCCESS',
     recipes
+  }
+}
+
+export const updateQuery = query => {
+  return {
+    type: 'UPDATE_QUERY',
+    query
   }
 }
