@@ -1,27 +1,76 @@
 import React from 'react';
+import RecipeTile from './recipeTile';
+import { WithContext as ReactTags } from 'react-tag-input';
+import '../stylesheet/tagsInput.css';
 
 export default class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      tags: [],
+      suggestions: ['apple', 'pear', 'peach', 'pineapple', 'stawberry', 'blueberry', 'banana']
+    }
+  }
+
+  handleDelete = (i) => {
+    let tags = this.state.tags;
+    tags.splice(i, 1);
+    this.setState({ tags: tags });
+  }
+
+  handleAddition = (tag) => {
+    let tags = this.state.tags;
+    tags.push({
+      id: tags.length + 1,
+      text: tag
+    });
+    this.setState({ tags: tags });
+  }
+
+  handleDrag = (tag, currPos, newPos) => {
+    let tags = this.state.tags;
+
+    // mutate array
+    tags.splice(currPos, 1);
+    tags.splice(newPos, 0, tag);
+
+    // re-render
+    this.setState({ tags: tags });
+  }
+
+  handleTagClick = () => {
+    //dummy
+  }
+
   componentDidMount() {
     this.props.getRecipes();
   }
 
   queryRecipes() {
-    let fruits = ['apple', 'pear', 'peach', 'pineapple', 'stawberry', 'blueberry', 'banana'];
-    let tmpFruits = fruits.slice(0, Math.random() * 6);
-    this.props.getRecipes(tmpFruits);
+    let ingredients = this.state.tags.map(tag => tag.text);
+    console.log(ingredients);
+    this.props.getRecipes(ingredients);
   }
 
   render() {
+    const { tags, suggestions } = this.state;
+    const { recipes } = this.props;
     return (
       <div>
+        <ReactTags
+          tags={tags}
+          suggestions={suggestions}
+          handleDelete={this.handleDelete}
+          handleAddition={this.handleAddition}
+          handleDrag={this.handleDrag}
+          handleTagClick={this.handleTagClick}
+        />
         <button onClick={() => this.queryRecipes()}>Query</button>
-      {
-        this.props.recipes.ingredients ? 
-        this.props.recipes.ingredients.map((recipe, index) => {
-          return <div key={index} >{recipe}</div>
-        }) :
-        <div></div>
-      }
+        <h1>{recipes.length}</h1>
+        {recipes.map((recipe, index) => (
+          <RecipeTile key={index} img_url={recipe.img_url} description={recipe.description} title={recipe.title} />
+        ))}
       </div>
     )
   }
