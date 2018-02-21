@@ -19,7 +19,7 @@ function queryDB(query, res) {
   connection.connect();
 
   console.log(query);
-  
+
   connection.query(query, (err, rows, fields) => {
     if (err) throw err;
     res.json(rows);
@@ -52,17 +52,22 @@ function generateQuery(queryObj) {
 // app.use(morgan('combined'))
 app.use(express.static(__dirname + '/dist'));
 
-router.get('/', (req, res) => {
-
+router.get('/recipes', (req, res) => {
+  let queryObj;
   console.log(req.query.form_data);
-  let queryObj = JSON.parse(req.query.form_data);
+  try {
+    queryObj = JSON.parse(req.query.form_data);
+  }
+  catch(err) {
+    console.log('empty query');
+  }
 
   let queryStr = generateQuery(queryObj);
 
   queryDB(queryStr, res);
 })
 
-app.use('/recipes', router);
+app.use('/api/v1', router);
 
 app.listen(port);
 console.log(`listening on port ${port}`);

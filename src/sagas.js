@@ -8,7 +8,7 @@ const fetchRecipesFromServer = queryObj => {
   
   let formDataEncodedStr = encodeURIComponent(JSON.stringify(formData));
 
-  return fetch(`http://localhost:8080/recipes?form_data=${formDataEncodedStr}`).then(res => res.json());
+  return fetch(`/api/v1/recipes?form_data=${formDataEncodedStr}`).then(res => res.json());
 };
 
 function* fetchRecipes(action) {

@@ -2,6 +2,7 @@ import React from 'react';
 import RecipeTile from './recipeTile';
 import { WithContext as ReactTags } from 'react-tag-input';
 import '../stylesheet/tagsInput.css';
+import SUGGESTIONS from '../data/ingredients.json';
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class Home extends React.Component {
 
     this.state = {
       tags: [],
-      suggestions: ['apple', 'pear', 'peach', 'pineapple', 'stawberry', 'blueberry', 'banana']
+      suggestions: SUGGESTIONS.ingredients
     }
   }
 
@@ -49,7 +50,6 @@ export default class Home extends React.Component {
 
   queryRecipes() {
     let ingredients = this.state.tags.map(tag => tag.text);
-    console.log(ingredients);
     this.props.getRecipes(ingredients);
   }
 
