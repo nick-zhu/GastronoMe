@@ -63,6 +63,7 @@ export default class Home extends React.Component {
     return (
       <div >
         <div className="query-container">
+          <button onClick={() => this.queryRecipes()}>Search</button>
           <ReactTags
             tags={tags}
             suggestions={suggestions}
@@ -73,8 +74,6 @@ export default class Home extends React.Component {
             allowDeleteFromEmptyInput={false}
             placeholder="Add New Ingredient"
           />
-          <button
-            onClick={() => this.queryRecipes()}>Search</button>
         </div>
         <div className="recipe-container">
           <div className="recipe-category">{recipes.length} Recipes</div>

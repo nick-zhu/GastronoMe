@@ -1,0 +1,30 @@
+.app-header {
+  width: 100%;
+  background: #D4972E;
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+
+.logo-img {
+  width: 200px;
+  height: 3rem;
+  margin-left: 1rem;
+  background-image: url('./gastronome_logo_small.png');
+  float: left;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.github-img {
+  width: 50px;
+  height: 3rem;
+  margin-right: 1rem;
+  background-image: url('./github-256.png');
+  position: relative;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  float: right;
+}

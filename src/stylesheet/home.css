@@ -54,6 +54,7 @@ body {
   font-family: 'Open Sans';
   background-color: #FFF;
   min-width: 900px;
+  margin: 0;
 }
 
 .recipe-container {
@@ -153,10 +154,6 @@ div.recipe-title {
   padding: 0 10rem;
 }
 
-.query-container .ReactTags__tags{
-  float: left;
-}
-
 .query-container button {
   float: right;
   text-transform: uppercase;
@@ -165,6 +162,11 @@ div.recipe-title {
   color: #878787;
   line-height: 2rem;
   width: 5rem;
+}
+
+.query-container .ReactTags__tags{
+  float: right;
+  margin-right: 3%;
 }
 
 /* Scroll Bar */
