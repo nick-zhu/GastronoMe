@@ -2,6 +2,7 @@ const path = require('path');
 const merge = require('webpack-merge');
 const validate = require('webpack-validator');
 const parts = require('./webpack-loaders');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
@@ -34,12 +35,24 @@ const common = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
-      }
+      },
+      /* for font-awesome */
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader',
+      },
     ]
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist'])
+  ]
 };
 
 let config;
