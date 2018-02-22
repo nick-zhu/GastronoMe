@@ -1,21 +1,20 @@
-/* Example Styles for React Tags*/
 div.ReactTags__tags {
   position: relative;
 }
 
 /* Styles for the input */
 div.ReactTags__tagInput {
-  width: 200px;
-  border-radius: 2px;
+  width: 10rem;
   display: inline-block;
 }
 div.ReactTags__tagInput input.ReactTags__tagInputField,
 div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
-  height: 31px;
+  height: 2rem;
   margin: 0;
   font-size: 12px;
   width: 100%;
   border: 1px solid #eee;
+  border-radius: 5px;  
 }
 
 /* Styles for selected tags */
@@ -38,20 +37,24 @@ div.ReactTags__selected a.ReactTags__remove {
 /* Styles for suggestions */
 div.ReactTags__suggestions {
   position: absolute;
+  z-index: 10;
+  width: 10rem;
+  padding: 1px;
 }
 div.ReactTags__suggestions ul {
   list-style-type: none;
   box-shadow: .05em .01em .5em rgba(0,0,0,.2);
   background: white;
-  width: 200px;
+  width: 100%;
+  padding: 0;
 }
 div.ReactTags__suggestions li {
   border-bottom: 1px solid #ddd;
-  padding: 5px 10px;
+  line-height: 2rem;
+  padding: 1px 10px;
   margin: 0;
 }
 div.ReactTags__suggestions li mark {
-  text-decoration: underline;
   background: none;
   font-weight: 600;
 }

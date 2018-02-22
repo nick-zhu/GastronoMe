@@ -51,12 +51,15 @@
 }
 
 body {
-  font-family: 'Open Sans'
+  font-family: 'Open Sans';
+  background-color: #FFF;
+  min-width: 900px;
 }
 
 .recipe-container {
   position: relative;
-  padding: 10rem;
+  clear: both;
+  padding: 3rem 10rem;
   overflow: auto;
   text-align: center;
 }
@@ -89,33 +92,42 @@ body {
   padding-bottom: 30%;
   margin: 1.66%;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 3px 9px 1px #e6e6e6;
 }
 
 .recipe-preview-tile {
   position:absolute;
   text-align: center;
   cursor: default;
-  height:90%;
-  width:100%;
+  height: 100%;
+  width: 100%;
 }
 
 .recipe-description {
-  width: 100%;
+  width: 96%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 0.8rem;
+  padding: 0 2%;
+  color: #878787;
+  text-align: left;
 }
 
 .recipe-image {
   width: 100%;
-  height: 85%;
+  height: 80%;
   background-size: 100%;
 }
 
-h3.recipe-title {
+div.recipe-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 2%;
+  text-align: left;
+  font-size: 1.2rem;
 }
 
 .recipe-detail-btn {
@@ -135,4 +147,48 @@ h3.recipe-title {
 .recipe-detail-btn:hover {
   opacity: 1;
   font-weight: 700;
+}
+
+.query-container {
+  padding: 0 10rem;
+}
+
+.query-container .ReactTags__tags{
+  float: left;
+}
+
+.query-container button {
+  float: right;
+  text-transform: uppercase;
+  border: solid 1px #878787;
+  border-radius: 5px;
+  color: #878787;
+  line-height: 2rem;
+  width: 5rem;
+}
+
+/* Scroll Bar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+/* The top and the bottom buttons (left and right for horizontal bars) */
+body::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+body::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #F7F7F7;
+  border-radius: 999em;
+}
+/* // This will style the thumb, ignoring the track */
+body::-webkit-scrollbar-thumb {
+  background-color: #BCBCBC;
+  border: 1px solid #fff;
+  border-radius: 999em;
+}
+body::-webkit-scrollbar-corner {
+  background-color: transparent;
 }

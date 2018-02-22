@@ -5,11 +5,15 @@ const recipeDetail = (state = {}, action) => {
     case 'RENDER_POPUP':
       $('body').css('overflow-x', 'hidden');
       $('body').css('overflow-y', 'hidden');
+      $('.query-container, .recipe-container, nav').css('filter', 'blur(5px)');
       return {
         recipe: action.recipe,
         showPopup: true
       }
     case 'CLOSE_RECIPE_POPUP':
+      $('body').css('overflow-x', 'auto');
+      $('body').css('overflow-y', 'auto');
+      $('.query-container, .recipe-container, nav').css('filter', 'none');
       return {
         recipe: null,
         showPopup: false

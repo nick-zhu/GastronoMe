@@ -34,8 +34,8 @@ export default class RecipeTile extends React.Component {
             }
           </div>
           <div>
-            <h3 className="recipe-title">{this.props.title}</h3>
-            <p className="recipe-description" title={this.props.description}>{this.props.description}</p>
+            <div className="recipe-title">{this.props.title}</div>
+            <div className="recipe-description" title={this.props.description}>{this.props.description}</div>
           </div>
         </div>
       </div>

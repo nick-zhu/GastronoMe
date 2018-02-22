@@ -62,16 +62,20 @@ export default class Home extends React.Component {
     const { recipes, renderPopup } = this.props;
     return (
       <div >
-        <RecipeDetailPopup />
-        <ReactTags
-          tags={tags}
-          suggestions={suggestions}
-          handleDelete={this.handleDelete}
-          handleAddition={this.handleAddition}
-          handleDrag={this.handleDrag}
-          handleTagClick={this.handleTagClick}
-        />
-        <button onClick={() => this.queryRecipes()}>Query</button>
+        <div className="query-container">
+          <ReactTags
+            tags={tags}
+            suggestions={suggestions}
+            handleDelete={this.handleDelete}
+            handleAddition={this.handleAddition}
+            handleDrag={this.handleDrag}
+            handleTagClick={this.handleTagClick}
+            allowDeleteFromEmptyInput={false}
+            placeholder="Add New Ingredient"
+          />
+          <button
+            onClick={() => this.queryRecipes()}>Search</button>
+        </div>
         <div className="recipe-container">
           <div className="recipe-category">{recipes.length} Recipes</div>
           {recipes.map((recipe, index) => (
@@ -84,6 +88,7 @@ export default class Home extends React.Component {
             />
           ))}
         </div>
+        <RecipeDetailPopup />
       </div>
     )
   }
