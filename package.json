@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack",
-    "server": "babel-node server.js"
+    "server": "webpack && babel-node server.js"
   },
   "babel": {
     "presets": [

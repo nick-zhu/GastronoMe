@@ -53,10 +53,7 @@ const common = {
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  plugins: [
-    new CleanWebpackPlugin(['dist'])
-  ]
+  }
 };
 
 let config;
