@@ -1,9 +1,11 @@
 import React from 'react';
 import RecipeTile from './recipeTile';
 import { WithContext as ReactTags } from 'react-tag-input';
+import RecipeDetailPopup from '../containers/recipeDetails';
 
 import '../stylesheet/tagsInput.css';
 import '../stylesheet/home.css';
+import '../stylesheet/popup.css';
 import SUGGESTIONS from '../data/ingredients.json';
 
 export default class Home extends React.Component {
@@ -57,9 +59,10 @@ export default class Home extends React.Component {
 
   render() {
     const { tags, suggestions } = this.state;
-    const { recipes } = this.props;
+    const { recipes, renderPopup } = this.props;
     return (
       <div >
+        <RecipeDetailPopup />
         <ReactTags
           tags={tags}
           suggestions={suggestions}
@@ -72,7 +75,13 @@ export default class Home extends React.Component {
         <div className="recipe-container">
           <div className="recipe-category">{recipes.length} Recipes</div>
           {recipes.map((recipe, index) => (
-            <RecipeTile key={index} img_url={recipe.img_url} description={recipe.description} title={recipe.title} />
+            <RecipeTile
+              key={index}
+              img_url={recipe.img_url}
+              description={recipe.description}
+              title={recipe.title}
+              onClick={() => renderPopup(recipe)}
+            />
           ))}
         </div>
       </div>

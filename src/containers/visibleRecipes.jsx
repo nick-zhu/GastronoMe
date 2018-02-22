@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Home from '../components/home';
-import { getRecipes, updateQuery } from '../actions';
+import { getRecipes, renderPopup } from '../actions';
 
 
 const mapStateToProps = (state) => {
@@ -14,8 +14,8 @@ const mapDispathToProps = dispatch => {
     getRecipes: query => {
       dispatch(getRecipes(query))
     },
-    updateQuery: query => {
-      dispatch(updateQuery(query))
+    renderPopup: recipe => {
+      dispatch(renderPopup(recipe))
     }
   }
 }

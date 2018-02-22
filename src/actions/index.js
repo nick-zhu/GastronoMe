@@ -18,3 +18,17 @@ export const recipesFetchSuccess = recipes => {
     recipes
   }
 }
+
+export const renderPopup = recipe => {
+  return {
+    type: 'RENDER_POPUP',
+    recipe
+  }
+}
+
+export const closePopup = () => {
+  return {
+    type: 'CLOSE_RECIPE_POPUP',
+    show: false
+  }
+}

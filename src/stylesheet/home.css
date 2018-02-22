@@ -94,6 +94,7 @@ body {
 .recipe-preview-tile {
   position:absolute;
   text-align: center;
+  cursor: default;
   height:90%;
   width:100%;
 }
@@ -115,4 +116,23 @@ h3.recipe-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.recipe-detail-btn {
+  cursor: pointer;
+  margin: 60% auto 0 auto;
+  height: 2.5rem;
+  width: 30%;
+  font-size: 1rem;
+  min-width: 125px;
+  min-height: 35px;
+  opacity: 0.8;
+  border: none;
+  border-radius: 5px;
+  color: darkorange;
+}
+
+.recipe-detail-btn:hover {
+  opacity: 1;
+  font-weight: 700;
 }
