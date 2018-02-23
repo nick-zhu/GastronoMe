@@ -1,0 +1,29 @@
+version: '2'
+services:
+  mysql:
+    build:
+      context: ./dockers
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: start123
+      MYSQL_DATABASE: gastronome
+      MYSQL_USER: gastronome
+      MYSQL_PASSWORD: gastronome
+
+  gastronome:
+    build: .
+    container_name: gastronome
+    restart: always
+    command: npm run server
+    volumes:
+      - .:/usr/app/
+      - /usr/app/node_modules
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    environment:
+      DATABASE_URL: mysql://gastronome@gastronome/gastronome
+    links:
+    - mysql:mysql

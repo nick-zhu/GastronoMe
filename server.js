@@ -9,11 +9,10 @@ const port = process.env.PORT || 8080;
 
 function queryDB(query, res) {
   let connection = mysql.createConnection({
-    host: '0.0.0.0',
-    port: '6603',
-    user: 'root',
-    password: 'mypassword',
-    database: 'sys'
+    host: 'mysql',
+    user: 'gastronome',
+    password: 'gastronome',
+    database: 'gastronome'
   });
 
   connection.connect();

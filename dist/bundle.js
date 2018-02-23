@@ -6942,15 +6942,15 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(setFilter, 'setFilter', '/Users/hanzhu/Documents/gastronoMe/src/actions/index.js');
+  __REACT_HOT_LOADER__.register(setFilter, 'setFilter', '/usr/app/src/actions/index.js');
 
-  __REACT_HOT_LOADER__.register(getRecipes, 'getRecipes', '/Users/hanzhu/Documents/gastronoMe/src/actions/index.js');
+  __REACT_HOT_LOADER__.register(getRecipes, 'getRecipes', '/usr/app/src/actions/index.js');
 
-  __REACT_HOT_LOADER__.register(recipesFetchSuccess, 'recipesFetchSuccess', '/Users/hanzhu/Documents/gastronoMe/src/actions/index.js');
+  __REACT_HOT_LOADER__.register(recipesFetchSuccess, 'recipesFetchSuccess', '/usr/app/src/actions/index.js');
 
-  __REACT_HOT_LOADER__.register(renderPopup, 'renderPopup', '/Users/hanzhu/Documents/gastronoMe/src/actions/index.js');
+  __REACT_HOT_LOADER__.register(renderPopup, 'renderPopup', '/usr/app/src/actions/index.js');
 
-  __REACT_HOT_LOADER__.register(closePopup, 'closePopup', '/Users/hanzhu/Documents/gastronoMe/src/actions/index.js');
+  __REACT_HOT_LOADER__.register(closePopup, 'closePopup', '/usr/app/src/actions/index.js');
 }();
 
 ;
@@ -13211,9 +13211,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(sagaMiddleware, 'sagaMiddleware', '/Users/hanzhu/Documents/gastronoMe/src/index.js');
+  __REACT_HOT_LOADER__.register(sagaMiddleware, 'sagaMiddleware', '/usr/app/src/index.js');
 
-  __REACT_HOT_LOADER__.register(store, 'store', '/Users/hanzhu/Documents/gastronoMe/src/index.js');
+  __REACT_HOT_LOADER__.register(store, 'store', '/usr/app/src/index.js');
 }();
 
 ;
@@ -37887,11 +37887,11 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(App, 'App', '/Users/hanzhu/Documents/gastronoMe/src/components/app.jsx');
+  __REACT_HOT_LOADER__.register(App, 'App', '/usr/app/src/components/app.jsx');
 
-  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/Users/hanzhu/Documents/gastronoMe/src/components/app.jsx');
+  __REACT_HOT_LOADER__.register(Routes, 'Routes', '/usr/app/src/components/app.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/components/app.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/components/app.jsx');
 }();
 
 ;
@@ -37978,9 +37978,9 @@ var _temp2 = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Header, 'Header', '/Users/hanzhu/Documents/gastronoMe/src/components/header.jsx');
+  __REACT_HOT_LOADER__.register(Header, 'Header', '/usr/app/src/components/header.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/components/header.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/components/header.jsx');
 }();
 
 ;
@@ -38206,13 +38206,13 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/hanzhu/Documents/gastronoMe/src/containers/visibleRecipes.jsx');
+  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/usr/app/src/containers/visibleRecipes.jsx');
 
-  __REACT_HOT_LOADER__.register(mapDispathToProps, 'mapDispathToProps', '/Users/hanzhu/Documents/gastronoMe/src/containers/visibleRecipes.jsx');
+  __REACT_HOT_LOADER__.register(mapDispathToProps, 'mapDispathToProps', '/usr/app/src/containers/visibleRecipes.jsx');
 
-  __REACT_HOT_LOADER__.register(visibleRecipes, 'visibleRecipes', '/Users/hanzhu/Documents/gastronoMe/src/containers/visibleRecipes.jsx');
+  __REACT_HOT_LOADER__.register(visibleRecipes, 'visibleRecipes', '/usr/app/src/containers/visibleRecipes.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/containers/visibleRecipes.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/containers/visibleRecipes.jsx');
 }();
 
 ;
@@ -38394,9 +38394,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Home, 'Home', '/Users/hanzhu/Documents/gastronoMe/src/components/home.jsx');
+  __REACT_HOT_LOADER__.register(Home, 'Home', '/usr/app/src/components/home.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/components/home.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/components/home.jsx');
 }();
 
 ;
@@ -38513,9 +38513,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(RecipeTile, "RecipeTile", "/Users/hanzhu/Documents/gastronoMe/src/components/recipeTile.jsx");
+  __REACT_HOT_LOADER__.register(RecipeTile, "RecipeTile", "/usr/app/src/components/recipeTile.jsx");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/hanzhu/Documents/gastronoMe/src/components/recipeTile.jsx");
+  __REACT_HOT_LOADER__.register(_default, "default", "/usr/app/src/components/recipeTile.jsx");
 }();
 
 ;
@@ -46571,13 +46571,13 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/Users/hanzhu/Documents/gastronoMe/src/containers/recipeDetails.jsx');
+  __REACT_HOT_LOADER__.register(mapStateToProps, 'mapStateToProps', '/usr/app/src/containers/recipeDetails.jsx');
 
-  __REACT_HOT_LOADER__.register(mapDispathToProps, 'mapDispathToProps', '/Users/hanzhu/Documents/gastronoMe/src/containers/recipeDetails.jsx');
+  __REACT_HOT_LOADER__.register(mapDispathToProps, 'mapDispathToProps', '/usr/app/src/containers/recipeDetails.jsx');
 
-  __REACT_HOT_LOADER__.register(RecipeDetails, 'RecipeDetails', '/Users/hanzhu/Documents/gastronoMe/src/containers/recipeDetails.jsx');
+  __REACT_HOT_LOADER__.register(RecipeDetails, 'RecipeDetails', '/usr/app/src/containers/recipeDetails.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/containers/recipeDetails.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/containers/recipeDetails.jsx');
 }();
 
 ;
@@ -46703,9 +46703,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(Detail, 'Detail', '/Users/hanzhu/Documents/gastronoMe/src/components/recipePopup.jsx');
+  __REACT_HOT_LOADER__.register(Detail, 'Detail', '/usr/app/src/components/recipePopup.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/components/recipePopup.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/components/recipePopup.jsx');
 }();
 
 ;
@@ -47062,9 +47062,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(page404, 'page404', '/Users/hanzhu/Documents/gastronoMe/src/components/pageNotFound.jsx');
+  __REACT_HOT_LOADER__.register(page404, 'page404', '/usr/app/src/components/pageNotFound.jsx');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/components/pageNotFound.jsx');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/components/pageNotFound.jsx');
 }();
 
 ;
@@ -49635,13 +49635,13 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(fetchRecipes, 'fetchRecipes', '/Users/hanzhu/Documents/gastronoMe/src/sagas.js');
+  __REACT_HOT_LOADER__.register(fetchRecipes, 'fetchRecipes', '/usr/app/src/sagas.js');
 
-  __REACT_HOT_LOADER__.register(watchGetRecipes, 'watchGetRecipes', '/Users/hanzhu/Documents/gastronoMe/src/sagas.js');
+  __REACT_HOT_LOADER__.register(watchGetRecipes, 'watchGetRecipes', '/usr/app/src/sagas.js');
 
-  __REACT_HOT_LOADER__.register(rootSaga, 'rootSaga', '/Users/hanzhu/Documents/gastronoMe/src/sagas.js');
+  __REACT_HOT_LOADER__.register(rootSaga, 'rootSaga', '/usr/app/src/sagas.js');
 
-  __REACT_HOT_LOADER__.register(fetchRecipesFromServer, 'fetchRecipesFromServer', '/Users/hanzhu/Documents/gastronoMe/src/sagas.js');
+  __REACT_HOT_LOADER__.register(fetchRecipesFromServer, 'fetchRecipesFromServer', '/usr/app/src/sagas.js');
 }();
 
 ;
@@ -49683,9 +49683,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(rootReducer, 'rootReducer', '/Users/hanzhu/Documents/gastronoMe/src/reducers/index.js');
+  __REACT_HOT_LOADER__.register(rootReducer, 'rootReducer', '/usr/app/src/reducers/index.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/reducers/index.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/reducers/index.js');
 }();
 
 ;
@@ -49737,9 +49737,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(recipeDetail, 'recipeDetail', '/Users/hanzhu/Documents/gastronoMe/src/reducers/recipeDetail.js');
+  __REACT_HOT_LOADER__.register(recipeDetail, 'recipeDetail', '/usr/app/src/reducers/recipeDetail.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/reducers/recipeDetail.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/reducers/recipeDetail.js');
 }();
 
 ;
@@ -60146,9 +60146,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(recipes, 'recipes', '/Users/hanzhu/Documents/gastronoMe/src/reducers/recipes.js');
+  __REACT_HOT_LOADER__.register(recipes, 'recipes', '/usr/app/src/reducers/recipes.js');
 
-  __REACT_HOT_LOADER__.register(_default, 'default', '/Users/hanzhu/Documents/gastronoMe/src/reducers/recipes.js');
+  __REACT_HOT_LOADER__.register(_default, 'default', '/usr/app/src/reducers/recipes.js');
 }();
 
 ;
